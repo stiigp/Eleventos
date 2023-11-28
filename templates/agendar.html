@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="icon" href="static/eleventos.png">
+    <script>
+        function alertfunc(){
+            alert("Banda cadastrada com sucesso!")
+        }
+    </script>
+</head>
+<body>
+    <img src="static/show4.png" style="width: 100%; position: absolute;">
+    <section id="main">
+        <header id="header" style="position: absolute; border-color:#9600FF">
+            <a href="/" class="texto-header" style="top: .4vw;">ELEVENTOS</a>
+            <div style="display: flex; position: absolute; left: 33vw; top: .9vw; justify-content: space-evenly; font-weight: 900; font-size: 3.2vw; text-indent: 4.5vw;" class="texto-header">
+                <a href="/">HOME</a>
+                <a href="eventos">EVENTOS</a>
+                <a href="agendar">AGENDAR</a>
+                <a href="sobre">SOBRE</a>
+            </div>
+        </header>
+        <div class="module-border-wrap" style="top: 5vw ; width: 99.5%;">
+        </div>
+
+        <div style="display: flex; position: relative; top: 6vw; justify-content: center;">
+            <form name="FCadArtista" id="FCadArtista" action="/agendar" enctype="multipart/form-data" method="POST">
+                <label for="itNome" style="font-weight: 700; font-size: 3vw;" class="degrade">Nome do grupo/artista</label><br>
+                <input type="text" name="itNome" id="itNome" maxlength="40">
+                <label for="emailContato" style="font-weight: 700; font-size: 3vw;" class="degrade">E-mail para contato</label><br>
+                <input type="email" name="emailContato" id="itContato" maxlength="40"><br>
+                <label for="inIntegrantes" style="font-weight: 700; font-size: 3vw;" class="degrade">Número de integrantes incluindo staff</label><br>
+                <input type="number" name="inIntegrantes" id="itContato" maxlength="40"><br>
+                <label for="sGenero" style="font-weight: 700; font-size: 3vw;" class="degrade">Gênero da apresentação</label>
+                <select name="sGenero" id="sGenero">
+                    <option value="Rock">Rock</option>
+                    <option value="Metal">Metal</option>
+                    <option value="MPB">MPB</option>
+                    <option value="Funk">Funk</option>
+                    <option value="Pagode">Pagode</option>
+                    <option value="Sertanejo">Sertanejo</option>
+                    <option value="Samba">Samba</option>
+                    <option value="Axé">Axé</option>
+                </select>
+                <label for="irCategoria" style="font-weight: 700; font-size: 3vw;" class="degrade">Categoria do artista</label>
+                <div id="irCategoria">
+                    <input type="radio" id="irCategoria" name="irCategoria" value="Banda"> <label style="font-weight: 700; font-size: 2vw;" class="degrade">Banda</label> <br>
+                    <input type="radio" id="irCategoria" name="irCategoria" value="Dupla"> <label style="font-weight: 700; font-size: 2vw;" class="degrade">Dupla</label> <br>
+                    <input type="radio" id="irCategoria" name="irCategoria" value="Solo"> <label style="font-weight: 700; font-size: 2vw;" class="degrade">Solo</label> <br>
+                </div>
+                <label for="iuSite" style="font-weight: 700; font-size: 3vw;" class="degrade">Site do grupo/artista</label>
+                <input type="url" id="iuSite" name="iuSite">
+                <label for="ifFoto" style="font-weight: 700; font-size: 3vw;" class="degrade">Envie uma foto quadrada do grupo/artista</label><br>
+                <input type="file" name="ifFoto" id="ifFoto">
+                <button type="submit" class="glow-on-hover" onclick="alertfunc()"> Submit
+            </form>
+
+        </div>
+        <div style="display: flex; position: relative; justify-content: center; top: 7vw;">
+            <p style="font-weight: 700; font-size: 3vw;" class="degrade">{{titulo}}</p><br>
+        </div>
+
+        <div style="display: flex; position: relative; top: 8vw; justify-content: center;">
+            <table>
+                <tr>
+                    <th style="font-weight: 700; font-size: 3vw;"  class="degrade">Nome</th>
+                    <th style="font-weight: 700; font-size: 3vw;" class="degrade">Email</th>
+                    <th style="font-weight: 700; font-size: 3vw;" class="degrade">Estilo</th>
+                    <th style="font-weight: 700; font-size: 3vw;" class="degrade">Site</th>
+                    <th style="font-weight: 700; font-size: 3vw;" class="degrade">Imagem</th>
+                </tr>
+                {%for linha in tabela%}
+                <tr>
+                    <td style="font-weight: 700; font-size: 1vw;" class="degrade">{{linha[1]}}</td>
+                    <td style="font-weight: 700; font-size: 1vw;" class="degrade">{{linha[2]}}</td>
+                    <td style="font-weight: 700; font-size: 1vw;" class="degrade">{{linha[4]}}</td>
+                    <td style="font-weight: 700; font-size: 1vw;" class="degrade">{{linha[6]}}</td>
+                    <td style="display: flex; justify-content: center;">
+                        <img  src="{{ url_for('mostrar_imagem', id=linha[0]) }}" alt="Imagem do Artista" width="30%" height="30%">
+                        <form action="/alterar_imagem" enctype="multipart/form-data" method="POST">
+                            <input type="file" name="ifFoto2" id="ifFoto2">
+                            <input type="hidden" id="art_id" name="art_id" value="{{linha[0]}}" readonly>
+                            <button type="submit" class="glow-on-hover">Alterar</button>
+                        </form>
+                    </td>
+                    <td><a href="apagar?id={{linha[0]}}"><button class="glow-on-hover">Apagar</button></a></td>
+                </tr>
+                {%endfor%}
+            </table>
+        </div>
+    </section>
+    
+</body>
+</html>

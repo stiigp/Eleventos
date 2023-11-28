@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        body {
+            background-color: #313131;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            margin: 5px;
+            padding: 1px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 100px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        #sobre {
+            background-color: #111;
+            padding: 40px;
+        }
+
+        #quemsoueu {
+            background-color: #222;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .projeto {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .projeto img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .projeto h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .projeto p {
+            color: #ccc;
+            font-size: 1rem;
+        }
+
+        #contato {
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: Copperplate, Papyrus, fantasy">Olá, sou Enzo Negri Barizo</h1>
+        <p>e esse é o meu portfólio pessoal</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#quemsoueu">Quem sou eu</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre">
+
+        <h2>Sobre Mim (breve resumo)</h2>
+        <ul style="line-height: 40px;">
+            <li>Ensino medio completo</li>
+            <li>Cursando ensino superior (Bacharelado Ciências da Computação - FIPP)</li>
+            <li>Cursando cursos profissionalizantes na plataforma UDEMY</li>
+            <li>Tenho 18 anos</li>
+            <li>Atualmente moro em Presidente Prudente - São Paulo</li>
+        </ul>
+    </section>
+
+    <section id="quemsoueu">
+        <h2>- Quem sou eu -</h2>
+        <hr>
+        <div class="projeto" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <h3>Musica</h3>
+            <p>Entusiasta de estilos como:</p>
+            <ul style="line-height: 20px; font-family: Copperplate, Papyrus, fantasy">
+                
+                <li>Punk</li>
+                <li>Nu Metal</li>
+                <li>Classic Rock</li>
+                <li>Alt music (generalizando)</li>
+                <li>heavy & Epic metal</li>
+                <li>Entre muitos outros...</li>
+            </ul>
+            <p>Sendo minha banda favorita:</p>
+            <img src="static/bmth.jpg" alt="foto bmth" style="white-space: nowrap;">
+            <p style="line-height: 20px; font-family: Copperplate, Papyrus, fantasy ;text-align: center;">Bring Me The Horizon</p>
+            <p style="text-align: center;">Avalanche - Bring Me The Horizon:</p>
+            <audio controls>
+                <source src="static/musica.mp3" type="audio/mpeg">
+            </audio>
+            
+        </div>
+
+        <div class="projeto" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <h3>Time</h3>
+            <p>&ensp;No cenário de E-sports, torço para times diferentes dependendo de cada vertente, sendo o que mais acompanho no geral é a FURIA, no cenario de Counter-Strike: Global Offensive:</p>
+            <img src="static/furia.png" alt="furia" style="white-space: nowrap; position: relative;">
+            <p>Agora, sobre futebol, nao sou um grande torcedor, porem ainda sim acompanho, sendo meu time o FLAMENGOO⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+            <img src="static/flamengo.gif" alt="furia" style="white-space: nowrap; position: relative;">
+        </div>
+
+        <div class="projeto" style="position:relative; bottom: 3px">
+            
+            <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">História</h3>
+            <p>&ensp;Nasci em Presidente Prudente, minha familia por parte de mae é brasileira e por parte de pai é toda uruguaia.</p>
+            <p>&ensp;Estudei minha vida toda no Colegio Anglo Prudentino:</p>
+            <img src="static/anglo.jpg" alt="anglo" style="white-space: nowrap; position: relative;">
+            <p>&ensp;E atualmente estudo na faculdade UNOESTE campus 1 - FIPP:⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+            <img src="static/uno.jpg" alt="unoeste" style="white-space: nowrap; position: relative;">
+        </div>
+
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p><strong>Email: </strong> contatoenzonegri@outlook.com</p>
+        
+        <p>Redes sociais:</p>
+        <a href="https://www.instagram.com/zenot.nb/" target="_blank">
+            <td>
+                <img src="static/instagram.png" alt="Instagram" style="width: 32px; white-space: nowrap;">
+            </td>
+        </a>
+        <a href="https://www.facebook.com/pvp.enzo?locale=pt_BR" target="_blank" style="position:relative; bottom: 3px">
+            <td>
+                 <img  src="static/facebook.png" alt="Facebook" style="width: 25px ; white-space: nowrap ; position:relative;">
+            </td>
+        </a>
+    </section>
+</body>
+</html>

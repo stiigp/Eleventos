@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relação de artistas</title>
+    <link rel="stylesheet" href="static/artistas.css">
+</head>
+<body>
+    <form action="/artistas">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Informe o nome do artista">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Informe o email do artista">
+        <label for="integrantes">Numero de integrantes</label>
+        <input type="number" id="integrantes" name="integrantes" placeholder="Informe o no. de integrantes do artista">
+        <label for="genero">Genero</label>
+        <input type="text" id="genero" name="genero" placeholder="Informe o genero do artista">
+        <label for="categoria">Categoria</label>
+        <input type="text" id="categoria" name="categoria" placeholder="Informe o categoria do artista">
+        <label for="site">Site</label>
+        <input type="text" id="site" name="site" placeholder="Informe o site do artista">
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>{{titulo}}</p>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Estilo</th>
+            <th>Link</th>
+        </tr>
+        {%for linha in tabela%}
+        <tr>
+            <th>{{linha[1]}}</th>
+            <th>{{linha[4]}}</th>
+            <th>{{linha[6]}}</th>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>

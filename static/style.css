@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap');
+        *{margin: 0; padding: 0; font-family: 'Roboto', sans-serif;}
+        hr{position: absolute;}
+        img.bg {
+
+                /* Set rules to fill background */
+                min-height: 100%;
+                min-width: 1024px;
+
+                /* Set up proportionate scaling */
+                width: 100%;
+                height: auto;
+                    
+                /* Set up positioning */
+                position: fixed;
+                top: 0;
+                left: 0;
+
+                max-width: 100%;
+                max-height: 100%;
+                }
+        .texto{position: absolute;}
+        .degrade{background-image: linear-gradient(45deg, #9600FF, #FF00C1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
+        .texto-header{position: absolute; font-weight: 900; font-size: 4vw; text-indent: 20px; background-image: linear-gradient(90deg, #9600FF, #FF00C1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
+        .texto-principal{font-weight: 900; font-size: 10vw; background-image: linear-gradient(45deg, #9600FF, #FF00C1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
+        .module-border-wrap{padding: 1rem; position: relative; background: linear-gradient(90deg, #9600FF, #FF00C1); padding: 3px;}
+        .glow-on-hover {
+                        width: 220px;
+                        height: 50px;
+                        border: none;
+                        outline: none;
+                        color: #fff;
+                        background: #111;
+                        cursor: pointer;
+                        position: relative;
+                        z-index: 0;
+                        border-radius: 10px;
+                    }
+
+        .glow-on-hover:before {
+                        content: '';
+                        background: linear-gradient(90deg, #9600FF, #FF00C1);
+                        position: absolute;
+                        top: -2px;
+                        left:-2px;
+                        background-size: 400%;
+                        z-index: -1;
+                        filter: blur(5px);
+                        width: calc(100% + 4px);
+                        height: calc(100% + 4px);
+                        animation: glowing 20s linear infinite;
+                        opacity: 0;
+                        transition: opacity .3s ease-in-out;
+                        border-radius: 10px;
+                    }
+
+                    .glow-on-hover:active {
+                        color: #000
+                    }
+
+                    .glow-on-hover:active:after {
+                        background: transparent;
+                    }
+
+                    .glow-on-hover:hover:before {
+                        opacity: 1;
+                    }
+
+                    .glow-on-hover:after {
+                        z-index: -1;
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: #111;
+                        left: 0;
+                        top: 0;
+                        border-radius: 10px;
+                    }
+
+                    @keyframes glowing {
+                        0% { background-position: 0 0; }
+                        50% { background-position: 400% 0; }
+                        100% { background-position: 0 0; }
+                    }
+        
+        a:link{color: black; text-decoration: none;}
+        a:hover{color: rgb(255, 73, 179);}
+        #main{position: relative; width: 100%; height: 100%; margin: auto;}
+        #header{left: -20px; width: 100%;}
+        .divtextoartista{height: 15vw; width: 65vw; background-color: black;}
+        .divartista{display: flex; position: relative; height: 15vw; width: 80vw; background-color: black; transition: all .2s;cursor: pointer;}
+        #divartista1{transition-timing-function: ease-in-out;}
+        .divartista:hover{height: 15.3vw;width: 80.3vw;}
+        .imgartista{height: 15vw;}
+        .h1artista{padding: 15px 0 0 15px;font-weight: 600;font-size: 28px; color: linear-gradient(45deg, #9600FF, #FF00C1);text-decoration-line: underline;}
+        .h2artista{padding: 110px 20px 0 20px;font-weight: 500;font-size: 22px;color:rgb(12, 12, 150) ;text-align:right;}
+        .partista{padding: 20px 20px 0 20px;font-weight: 400;font-size: 18.5px; text-align: justify;color: white;}
+        .bordaartista{height: 15vw; width: 80vw; padding: 1rem; position: relative; background: linear-gradient(to right,#9600FF,#FF00C1); padding: 5.5px;}
+        .linkartista{position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 1;}
+        input[type=text]{display: flex; justify-self: center; width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 3px solid #FF00C1; font-size: 1vw;}
+        input[type=text]:focus{border: 3px solid #9600FF}
+        input[type=number]{display: flex; justify-self: center; width: 12%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 3px solid #FF00C1;}
+        input[type=number]:focus{border: 3px solid #9600FF}
+        input[type=email]{display: flex; justify-self: center; width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 3px solid #FF00C1;}
+        input[type=email]:focus{border: 3px solid #9600FF}
+        select{display: flex; justify-self: center; width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 3px solid #FF00C1;}
+        input[type=url]{display: flex; justify-self: center; width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 3px solid #FF00C1; font-size: 1vw;}
+        input[type=url]:focus{border: 3px solid #9600FF}
+        th{padding: 1vw;}
+        table, th, td {border: 1px double white;}

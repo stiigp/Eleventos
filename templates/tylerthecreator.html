@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler the Creator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap');
+        *{margin: 0; padding: 0; font-family: 'Roboto', sans-serif;}
+        hr{position: absolute;}
+        .image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('static/show4.png');
+            background-size: cover;
+            overflow: auto;
+        }
+        .degrade{background-image: linear-gradient(45deg, #9600FF, #FF00C1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
+        .texto-header{position: absolute; font-weight: 900; font-size: 4vw; text-indent: 20px; background-image: linear-gradient(90deg, #9600FF, #FF00C1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
+        .texto-principal{font-weight: 900; font-size: 10vw; background-image: linear-gradient(45deg, #9600FF, #FF00C1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
+        .module-border-wrap{padding: 1rem; position: relative; background: linear-gradient(90deg, #9600FF, #FF00C1); padding: 3px;}
+        .glow-on-hover {
+                        width: 220px;
+                        height: 50px;
+                        border: none;
+                        outline: none;
+                        color: #fff;
+                        background: #111;
+                        cursor: pointer;
+                        position: relative;
+                        z-index: 0;
+                        border-radius: 10px;
+                    }
+
+        .glow-on-hover:before {
+                        content: '';
+                        background: linear-gradient(90deg, #9600FF, #FF00C1);
+                        position: absolute;
+                        top: -2px;
+                        left:-2px;
+                        background-size: 400%;
+                        z-index: -1;
+                        filter: blur(5px);
+                        width: calc(100% + 4px);
+                        height: calc(100% + 4px);
+                        animation: glowing 20s linear infinite;
+                        opacity: 0;
+                        transition: opacity .3s ease-in-out;
+                        border-radius: 10px;
+                    }
+
+                    .glow-on-hover:active {
+                        color: #000
+                    }
+
+                    .glow-on-hover:active:after {
+                        background: transparent;
+                    }
+
+                    .glow-on-hover:hover:before {
+                        opacity: 1;
+                    }
+
+                    .glow-on-hover:after {
+                        z-index: -1;
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: #111;
+                        left: 0;
+                        top: 0;
+                        border-radius: 10px;
+                    }
+
+                    @keyframes glowing {
+                        0% { background-position: 0 0; }
+                        50% { background-position: 400% 0; }
+                        100% { background-position: 0 0; }
+                    }
+        
+        a:link{color: black; text-decoration: none;}
+        a:hover{color: rgb(255, 73, 179);}
+        input[type=text]{display: flex; justify-self: center; width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 3px solid #FF00C1; font-size: 1vw;}
+        input[type=text]:focus{border: 3px solid #9600FF}
+        input[type=number]{display: flex; justify-self: center; width: 12%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 3px solid #FF00C1;}
+        input[type=number]:focus{border: 3px solid #9600FF}
+        input[type=email]{display: flex; justify-self: center; width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 3px solid #FF00C1;}
+        input[type=email]:focus{border: 3px solid #9600FF}
+        select{display: flex; justify-self: center; width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 3px solid #FF00C1;}
+        input[type=url]{display: flex; justify-self: center; width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 3px solid #FF00C1; font-size: 1vw;}
+        input[type=url]:focus{border: 3px solid #9600FF}
+        #main{position: relative; width: 100%; height: 100%; margin: auto;}
+        #header{left: -20px; width: 100%;}
+    </style>
+</head>
+<body>
+    <img src="static/show4_cropped.png" style="width: 100%; position: absolute;">
+    <section id="main">
+        <header id="header" style="position: absolute; border-color:#9600FF">
+            <a href="/" class="texto-header" style="top: .4vw;">ELEVENTOS</a>
+            <div style="display: flex; position: absolute; left: 33vw; top: .9vw; justify-content: space-evenly; font-weight: 900; font-size: 3.2vw; text-indent: 4.5vw;" class="texto-header">
+                <a href="/">HOME</a>
+                <a href="eventos">EVENTOS</a>
+                <a href="agendar">AGENDAR</a>
+                <a href="sobre">SOBRE</a>
+            </div>
+        </header>
+        <div class="module-border-wrap" style="top: 5vw ; width: 99.5%;">
+        </div>
+    <div style="display: flex; position: relative; top: 10vw; flex-direction: row; align-items: center; margin-left: 5vw; margin-right: 5vw; justify-content: space-around;">
+        <img src="static/tyler.jpeg" alt="Tyler, the Creator" style="width: 30%;">
+        <div style="display: flex; position: relative; width: 32vw; height: auto; border-style: solid; border-width: .5vw; border-image: linear-gradient(90deg, #9600FF, #FF00C1) 1; flex-direction: column; background-color: black;">
+            <p class="degrade" style="text-align: justify; text-indent: 2vw; font-size: larger;">Tyler Gregory Okonma (Los Angeles, 6 de março de 1991), mais conhecido pelo seu nome artístico Tyler, The Creator, é um rapper, compositor, produtor musical, diretor de videoclipes, empresário, estilista e designer de moda Nascido em Ladera Heights, ele ganhou destaque como o líder e co-fundador do coletivo de hip hop alternativo Odd Future, tendo produzido músicas para quase todos do grupo. Tyler cria toda a arte para os lançamentos do grupo e disse em uma entrevista com o apresentador de rádio DJ Semtex, que projeta toda a roupa do grupo e outras mercadorias também. Como artista solo, Tyler lançou uma mixtape e cinco álbuns de estúdio, muitas vezes responsável por quase ou toda a produção dos mesmos. O show será realizado no dia primeiro de abril de 2024, na Pedreira Paulo Leminski, em Curitiba.</p>
+        </div>
+    </div>

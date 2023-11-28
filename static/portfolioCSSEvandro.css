@@ -1,0 +1,35 @@
+
+*{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-decoration: none; margin: 0; padding: 0;}
+
+#cabecalho{position:relative;width: 100%; height: 90px;background-color: #192342; list-style: none;}
+
+header{display: flex; justify-content: center ; max-width: 100%; align-items:center;}
+.h1cabecalho{color: #F7F7FF; font-weight: bold; text-align: center;background-color: #192342;text-decoration: underline;}
+.link-cabecalho{display: flex; gap: 4rem; font-weight: 275; cursor: pointer;padding: 10px;}
+.link-cabecalho a{color: #F7F7FF; font-size: 17px;}
+.link-cabecalho a:hover{color: #5d879b; transition: 0.3s all;}
+
+#home{position: relative; width: 100%;height: 700px;background-color: #5d879b;}
+
+.background-image{background-image: url(texture-wall-background.jpg);background-size: cover;background-position: center; width: 100%; height: 700px;}
+.container-home{display: flex;align-items: center; padding: 200px 0 0 200px;}
+.home-h3{color: #F7F7FF;font-weight: bold;font-size: 24px; margin-left: 50px;}
+.home-h1{color: #5d879b;font-weight: bold;font-size: 32px;margin-left: 50px;}   
+.home-p{color: #F7F7FF;font-weight:200;font-size: 18px;margin-left: 50px;}
+.style-img{height: 250px; border-radius: 15px; border: 3px solid #192342;}
+
+#sobre-mim{position:relative;width: 100%;height: 230px;background-color: #56859c;}
+.sobre-h2{color: #F7F7FF;font-weight: bold;text-align: center;padding:5px;text-decoration: underline;text-decoration-color: #192342;}
+.sobre-ul{padding-left: 200px;color:#F7F7FF; line-height: 30px;font-weight: 350;}
+
+#cursos{position: relative;width: 100%;height: 220px;background-color: #1a2852;}
+.cursos-h2{color: #F7F7FF;font-weight: bold;text-align: center;padding:5px;text-decoration: underline;text-decoration-color: #5d879b;}
+.cursos-ul{padding-left: 200px;color:#F7F7FF; line-height: 30px;font-weight: 350;list-style-type: none;padding-top: 20px;}
+
+#contato{position: relative;width: 100%;height: 200px;background-color: rgb(17, 26, 53);}
+.contato-h2{color: #F7F7FF;font-weight: bold;text-align: center;padding:5px;text-decoration: underline;text-decoration-color: #5d879b;}
+.contato-li{display:inline-block; justify-content:center ; text-align: center; margin-top: 0.7rem;width: 100%;}
+.contato-li a{padding: 1px; transition: all 0.2s;}
+
+::-webkit-scrollbar{background-color: #192342; width: 2px;}
+::-webkit-scrollbar-thumb{background-color: #F7F7FF; width: 2px;}

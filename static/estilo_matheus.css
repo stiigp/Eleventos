@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    overflow-y: scroll;
+}
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: url(fundo2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 41rem;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    list-style: none;
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.cabeçalho-link a{
+    color: white;
+    font-size: 14px;
+}
+
+.cabeçalho-link a:hover{
+    color: #1FBADC;
+    transition: 0.3s all;
+}
+
+.container-text{
+    margin: 12rem 0 0 7rem;
+    display: flex;
+    align-items: center;
+}
+
+.text h1{
+    color: white;
+    margin-top: 10px;
+}
+
+.text h3{
+    color: white;
+    font-size: 15px;
+}
+
+.text span{
+    color: #1FBADC;
+}
+
+.texto-inicio{
+    padding-left: 25px;
+}
+
+.text p{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+header{
+    background: #030313;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 0.3rem;
+    position: sticky;
+    top: 0px;
+}
+
+#foto-perfil{
+    height: 170px;
+    border-radius: 50%;
+    margin-top: 17px;
+    border: 3px solid #1C1D4D;
+}
+
+#sobre-mim{
+    background-color: #1FBADC;
+    padding: 20px;
+}
+
+.sobre-texto h2{
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: underline white;
+}
+
+.sobre-texto ol{
+    margin-top: 2px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sobre-texto li{
+    list-style-type: disc;
+    margin-left: 38px;
+    margin-top: 5px;
+}
+
+#educacao{
+    background-color: #060527;
+    padding: 20px;
+}
+
+.educa-texto h2{
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: underline #1FBADC;
+}
+
+.educa-texto p{
+    color: white;
+    padding-left: 0;
+    margin-top: 2px;
+}
+
+.educa-texto li h3{
+    color: #1FBADC;
+}
+
+.educa-texto ul{
+    padding: 10px;
+}
+
+#contato{
+    background-color: #030313;
+    padding: 20px;
+}
+
+.contato-texto h2{
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: underline white;
+}
+
+.contato-texto p{
+    color: white;
+    padding-left: 0;
+    margin-top: 2px;
+}
+
+.contato-texto li h3{
+    color: white;
+}
+
+.contato-texto ul{
+    padding: 10px;
+}

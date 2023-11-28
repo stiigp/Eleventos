@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Panucci - Porfólio Pessoal</title>
+    <style>
+        *{font-family: Arial, Helvetica, sans-serif}
+        #principal{position: relative; width: 90%; height: 6100px; margin: auto}
+        #cabecalho{background-color: #3D86B8; float: left; width: 100%; height: 2.3%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 40px; text-align: center; border-style: solid; border-color: #3C3D52;}
+        #menu{background-color: #3D86B8; float: left; width: 19.5%; height: 75%; margin-right: 0.5%; margin-top: 0.5%; text-align: justify; border-style: solid; border-color: #3C3D52; overflow: auto;}
+        #conteudo{background-color: #3D86B8; float: left; width: 78.78%; height: 75%; margin-top: .5%; margin-left: .5%;border-style: solid; border-color: #3C3D52;}
+        #images{display: flex; flex-direction: row; justify-content: space-around;}
+        a:link{text-decoration: none; color: #111625;}
+        a:visited{text-decoration: none; color: #111625;}
+        a:hover{text-decoration: solid; color:#FFFFFF;}
+        .item{text-align: center; font-size: 30px;}
+        .subitem{text-indent: 2%;}
+        .texto{text-indent: 5%; text-justify: auto; margin-left: 5%; margin-right: 5%;}
+        .center {display: block; margin-left: auto; margin-right: auto;}
+        
+    </style>
+</head>
+<body style="background-color: #5C7180;">
+    <section id="principal">
+        <header id="cabecalho">
+            <h3>Portfólio Pessoal - Lucas Panucci</h3>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="#id-escolaridade">Escolaridade</a>
+                    <ul>
+                        <li>
+                            <a href="#id-BCC">Ciência da Computação</a>
+                        </li>
+                        <li>
+                            <a href="#id-maratona">Programação Competitiva</a>
+                        </li>
+                        <li>
+                            <a href="#id-azure">Certificação Azure</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#id-lazer">Lazer</a>
+                    <ul>
+                        <li>
+                            <a href="#id-musica">Música</a>
+                        </li>
+                        <li>
+                            <a href="#id-pesca">Pescaria</a>
+                        </li>
+                        <li>
+                            <a href="#id-videogame">Jogos eletrônicos</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <article id="conteudo">
+            <h1 class="item" id="id-escolaridade">Escolaridade</h1>
+            <h3 class="subitem" id="id-BCC">- Ciência da Computação</h3>
+            <p class="texto">Atualmente cursando o segundo termo de Bacharelado em Ciência da Computação (BCC) na FIPP - Faculdade de Informática de Presidente Prudente.</p>
+            <img src="static/images/BCC.jpeg" style="width: 40%;" class="center">
+            <h3 class="subitem" id="id-maratona">- Programação Competitiva</h3>
+            <p class="texto">Recentemente iniciei na programação competitiva, participando junto a meus colegas de classe da Maratona de Programação SBC.</p>
+            <div id="images">
+                <img src="static/images/ICPC2.jpeg" class="center" style="width: 30%;" alt="ICPC">
+                <img src="static/images/ICPC1.jpeg" class="center" style="width: 40%; height: 40%;" alt="ICPC">
+            </div>
+            <h3 class="subitem">- Certificação Azure</h3>
+            <p class="texto">Recentemente adquiri a certificação Azure AZ-900, após realizar a prova com 92.5% de aproveitamento.</p>
+            <img src="static/images/AZ900.jpeg" class="center" style="width: 60%;" alt="Certificado AZ-900">
+            <h1 class="item" id="id-lazer">Lazer</h1>
+            <h3 class="subitem" id="id-musica">- Música</h3>
+            <p class="texto">Apaixonado por música desde pequeno, possuo um <a href="https://www.youtube.com/@stigpianogeek9129" target="_blank" style="text-decoration:underline;">canal de piano no youtube</a>, e também toco violão e canto. Apesar de nunca ter me dedicado ao estudo de música, faço de tudo um pouco e tudo um pouco mal feito!</p>
+            <div id="images">
+                <img src="static/images/canal.jpeg" class="center" style="width: 40%; height: 40%;" alt="Canal Stig Pianogeek">
+                <img src="static/images/violao.jpeg" class="center" style="width: 40%; height: 40%;" alt="ViolãO">
+            </div>
+            <img src="static/images/canto.jpeg" class="center" style="height: 15%;">
+            <h3 class="subitem" id="id-pesca">- Pescaria</h3>
+            <p class="texto">Nos últimos meses, despertei um interesse repentino por pescaria, que tem me rendido bons momentos de diversão</p>
+            <div id="images">
+                <img src="static/images/peixe2.jpeg" style="height: 30%; width: 30%;" alt="Peixe">
+                <img src="static/images/peixe3.jpeg" style="height: 30%; width: 30%;" alt="Peixe">
+            </div>
+            <div id="images">
+                <img src="static/images/maiorlambaridomundo.jpeg" style="height: 40%; width: 40%;" alt="Maior Lambari do Mundo">
+                <img src="static/images/peixe1.jpeg" style="height: 30%; width: 30%;" alt="Peixe">
+            </div>
+            <h3 class="subitem" id="id-videogame">- Jogos Eletrônicos</h3>
+            <p class="texto">Além de tudo isso, como um bom jovem, e para a tristeza do Chico, também costumo jogar jogos como League of Legends ou Valorant com meus amigos em tempo vago.</p>
+            <div id="images">
+                <img src="static/images/lol.jpeg" style="width: 25%;">
+                <img src="static/images/valorant.png">
+            </div>
+        </article>
+    </section>
+</body>
+</html>
